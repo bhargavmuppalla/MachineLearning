@@ -1,4 +1,4 @@
-
+# the following program shows how to fit the data using least square solver.
 from numpy import array, exp, math, polyfit, random
 import matplotlib.pyplot as plt 
 
@@ -18,7 +18,7 @@ for i in range(2,10):
 def f1(x):
     return -0.44355089 * x**3 + 3.26780886 * x**2 + -2.79809363 * x + 0.46130839
 
-#calculating squared errors
+#calculating errors
 for i in range(len(x)):
     se = (y[i]-f1(x[i]))**2
     print("For x=%f"%(x[i]),"squared error = ",se)
