@@ -1,3 +1,6 @@
+#The following program classifies data based on the label. the label has either 0 or 1. 0 points are considered red points and 1 points are considered as blue.
+#we draw a decision boundary after the classification
+
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn import svm
@@ -36,9 +39,6 @@ w = np.sqrt(weights[0] **2 + weights[1] ** 2)
 for i in range(len(x)):
     dist = lineEquation(x[i][0],x[i][1])/w
     print("distance of point (%f"%(x[i][0]),", %f"%(x[i][1]),") from Boundary is", dist)
-
-
-
 
 
 colormap = np.array(['r','b'])
